@@ -1,15 +1,12 @@
-const { Random } = require("something-random-on-discord")
-const random = new Random();
- 
-module.exports = {
-  name: "neko",
-   category: "fun",
-  
-  description: "Get Fresh Neko Images :D",
-run: async (client, message, args) => {
-  
-    let data = await random.getNeko()
-    message.channel.send(data)
-  
-}
-}
+module.exports= {
+  name : "loli",
+  run : async (client,message, args) => {
+  let owo = require('@kagchi/kag-api')
+  let loli = await owo.loli.kawaii()
+  const Discord = require ('discord.js')
+  let Embed = new Discord.MessageEmbed()
+  .setTitle('Nyan Oniichan')
+  .setImage(loli)
+  .setColor('RANDOM')
+  message.channel.send(Embed)
+  }}
