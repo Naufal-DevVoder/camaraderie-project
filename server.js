@@ -488,4 +488,4 @@ client.on("roleUpdate", function(oldRole, newRole) {
   return client.channels.cache.get(MOD_CHANNEL).send(embed);
 });
 
-client.login("NzgyODMyODMxNjYyNzg0NTMy.X8R74w.Kxh0PibVyL5jgHta5hHgCjOrbow"); 
+client.login("TOKEN"); 
